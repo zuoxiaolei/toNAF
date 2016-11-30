@@ -14,7 +14,7 @@ def text2NAF(content,date,title,publicId,url):
     else:
         os.mkdir("nafFile")
 
-    with open("nafFile/"+title+".naf",'w') as fh:
+    with open("nafFile/"+publicId+".naf",'w') as fh:
         fh.write('<?xml version="1.0" encoding="utf-8"?>'+'\n')
         fh.write('<NAF xml:lang="en" version="v3">'+'\n')
         fh.write("<nafHeader>\n")
